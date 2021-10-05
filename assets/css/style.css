@@ -1,0 +1,157 @@
+:root{
+    --vermelha:#e50914;
+    --preta:#141414;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+  
+}
+body{
+    background-color: var(--preta);
+    font-family:'Times New Roman',times,serif;
+    color: #ffff;
+}
+ header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  
+}
+header .container .logo img{
+    height: 60px;
+}
+header nav a{
+    text-decoration: none;
+    color: #aaa;
+    margin-right: 10px;
+}
+header nav a:hover{
+    color: #fff;
+}
+/* filme -principal */
+.filme-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.80),rgba(0,0,0,.50)100%),url(../img/good-doctor.jpg);
+    height: 500px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.filme-principal .descricao{
+    margin-bottom: 40px;
+}
+.filme-principal .title{
+    font-size: 40px;
+    margin-top: 15%;
+    font-family: 'Trebuchat MS',Arial, sans-serif;
+}
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: #fff;
+
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: .3s ease all;
+}
+.botao a{
+    color:#fff;
+}
+.botao i{
+    margin-right:8px;
+    font-size: 14px;
+}
+.botao:hover{
+    background-color: #fff;
+    color: #000;
+}
+.container{
+    margin-left: 30px;
+}
+.filme-principal .container{
+    width: 70%;
+}
+.box-filmes{
+    height: 100%;
+    width: 100%;
+    display: block;
+    cursor: pointer;
+}
+.box-filmes:hover{
+    border: 2px solid #fff;
+}
+
+   
+
+
+/* janela modal */
+.modal{
+    position:fixed;
+     top:0;
+    left:0;
+    height:100vh;
+    width: 100vw;
+    z-index: 100;
+    background-color: rgba(0,0,0,.50);
+    display:none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modal-content{
+    display: flex;
+    flex-direction: row;
+    width: 800px;
+    height: 330px;
+    background: linear-gradient(rgba(0,0,0,.80),rgba(0,0,0,.80)100%),url(../img/equipe-doctor.jpg);
+    background-size: cover;
+}
+.modal .info{
+   padding-left: 30px;
+}
+.modal .classificacao{
+    display: flex;
+    align-items: center;
+    color: #aaa;
+ }
+.modal .categoria{
+  padding-left: 4px;
+ 
+
+}
+.modal .categoria img{
+    width: 24px;
+    height: 24px;
+
+}
+
+.modal p{
+    padding-top: 10px;
+    color: #aaa;
+}
+.fechar {
+    width: 20px;
+    height:20px;
+    float: right;
+   
+}
+.btn{
+    margin-top: 5px;
+    width: 70px;
+    padding: 3px 6px;
+    font-size: 16px;
+    font-weight:bold;
+
+}
+.btn a{
+   
+    color: #333;
+}
